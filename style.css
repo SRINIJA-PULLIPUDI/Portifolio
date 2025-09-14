@@ -294,6 +294,7 @@ a {
     align-items: center;
     justify-content: center;
     box-shadow:0 0 2px 2.5px #e0e0e0;
+    margin:0 0 80px 0;
 }
 
 .scroll-arrow {
@@ -409,8 +410,8 @@ a {
     border: 1px solid var(--color-border-card);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.1s ease, box-shadow 0.3s ease;    
+    box-shadow:0 5px 5px gray;
+    transition: transform 0s ease, box-shadow 0.1s ease;    
 }
 
 .skills__box:hover, .certification__box:hover, .profile__box:hover, .project__box:hover {
