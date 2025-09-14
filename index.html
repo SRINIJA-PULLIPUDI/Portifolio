@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinija Pullipudi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./Pic.png" alt="Srinija Logo" class="logo-img">
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#coding-profiles" class="nav__link">Coding Profiles</a></li>
+                <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section home__section">
+            <div id="particles-js" class="home__bg">
+            </div>
+            <div class="home__text-container">
+                <h1 class="home__text-hi">Hi! I'm</h1>
+                <h2 class="home__text-name">Srinija Pullipudi</h2>
+            </div>
+            <div class="scroll-indicator" data-scroll="">
+                <i class="fa-solid fa-chevron-down scroll-arrow" aria-hidden="true"></i>
+            </div>
+        </section>
+
+        <section id="about" class="section about__section">
+            <div class="about__container">
+                <div class="about__left Pic">
+                    <img src="./Pic.png" alt="Srinija Pullipudi" class="about__image">
+                </div>
+                <div class="about__right main-cont">
+                    <h2 class="about__heading">About Me</h2>
+                    <p class="about__description">
+                        Hi, I'm Srinija, a passionate and dedicated computer science student with a knack for front-end development. I love building engaging and user-friendly web applications. My journey in tech is driven by curiosity and a desire to create impactful solutions. I am proficient in HTML, CSS, JavaScript, and various front-end frameworks. I am always eager to learn new technologies and improve my skills to stay ahead in the ever-evolving world of web development.
+                    </p>
+                    <a href="Srinija_Pullipudi_Resume.pdf" download class="resume-download-btn">
+                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills__section">
+            <h2 class="section__heading">Skills</h2>
+            <div class="skills__grid">
+                <div class="skills__box card">
+                    <div class="skills__header">
+                        <span class="skills__header-text">Frontend</span>
+                    </div>
+                    <div class="skills__main">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-html5 skill-icon" style="color:#e13c05;"></i>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt skill-icon" style="color:#049adb;"></i>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-js-square skill-icon" style="color:#DEBD05;"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-react skill-icon" style="color:#00CCFF;"></i>
+                            <span class="skill-name">React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__box card">
+                    <div class="skills__header">
+                        <span class="skills__header-text">Backend & Database</span>
+                    </div>
+                    <div class="skills__main">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-node-js skill-icon"></i>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database skill-icon" style="color:#04c1d5;"></i>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-server skill-icon"></i>
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__box card">
+                    <div class="skills__header">
+                        <span class="skills__header-text">Languages</span>
+                    </div>
+                    <div class="skills__main">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-python skill-icon"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-c skill-icon"></i>
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-java skill-icon"></i>
+                            <span class="skill-name">Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__box card">
+                    <div class="skills__header">
+                        <span class="skills__header-text">Tools & Platforms</span>
+                    </div>
+                    <div class="skills__main">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-git-alt skill-icon"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-github skill-icon"></i>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-code skill-icon"></i>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects__section">
+            <h2 class="section__heading">Projects</h2>
+            <div class="projects__container">
+                <div class="project__box card">
+                    <div class="project__left">
+                        <h3 class="project__title">E-commerce Website</h3>
+                        <p class="project__description">
+                            A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB. Features user authentication, product catalog, shopping cart, and a secure payment gateway.
+                        </p>
+                        <a href="https://github.com/srinija-pullipudi/e-commerce-site" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github github-icon"></i>
+                        </a>
+                    </div>
+                    <div class="project__right">
+                        <img src="images/project1.jpg" alt="E-commerce Website" class="project__image">
+                    </div>
+                </div>
+                <div class="project__box card">
+                    <div class="project__left">
+                        <h3 class="project__title">Portfolio Website</h3>
+                        <p class="project__description">
+                            The very portfolio you are viewing! This was built using HTML, CSS, and JavaScript. It showcases my skills and projects in a responsive and engaging way with animations.
+                        </p>
+                        <a href="https://github.com/srinija-pullipudi/portfolio-website" target="_blank" class="github-link">
+                            <i class="fa-brands fa-github github-icon"></i>
+                        </a>
+                    </div>
+                    <div class="project__right">
+                        <img src="images/project2.jpg" alt="Portfolio Website" class="project__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coding-profiles" class="section coding-profiles__section">
+            <h2 class="section__heading">Coding Profiles</h2>
+            <div class="profiles__grid">
+                <a href="https://leetcode.com/srinija_p12" target="_blank" class="profile__box leetcode cardleetcode">
+                    <div class="profile__top">
+                        <div class="profile__counter">
+                            <i class="fa-solid fa-laptop-code profile-icon"></i>
+                            <div class="value">
+                                <div class="counter-value" data-target="250"></div>
+                                <div class="unit">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="name">Problems in</div>
+                    <div class="profile__name">LeetCode</div>
+                </a>
+                <a href="https://www.codechef.com/users/srinija_p12" target="_blank" class="profile__box codechef cardcodechef">
+                    <div class="profile__top">
+                        <div class="profile__counter">
+                            <i class="fa-solid fa-code profile-icon"></i>
+                            <div class="value">
+                                <div class="counter-value" data-target="220"></div>
+                                <div class="unit">+</div>
+                            </div>                 
+                         </div>
+                    </div>
+                    <div class="name">Problems in</div>
+                    <div class="profile__name">CodeChef</div>
+                </a>
+                <a href="https://www.hackerrank.com/23MH1A05O3" target="_blank" class="profile__box hackerrank cardhackerrank">
+                    <div class="profile__top">
+                        <div class="profile__counter">
+                            <i class="fa-brands fa-hackerrank profile-icon"></i>
+                            <div class="value">
+                                <div class="counter-value" data-target="10"></div>
+                                <div class="unit">+</div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="name">Stars in</div>
+                    <div class="profile__name">HackerRank</div>
+                </a>
+                <a href="https://www.geeksforgeeks.org/user/srilupuln415" target="_blank" class="profile__box gfg cardgfg">
+                    <div class="profile__top">
+                        <div class="profile__counter">
+                            <i class="fa-solid fa-laptop-code profile-icon"></i>
+                            <div class="value">
+                                <div class="counter-value" data-target="110"></div>
+                                <div class="unit">+</div>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="name">Problems in</div>
+                    <div class="profile__name">GeeksforGeeks</div>
+                </a>
+                <a href="https://github.com/srinija-pullipudi" target="_blank" class="profile__box github cardgit">
+                    <div class="profile__top">
+                        <div class="profile__counter">
+                            <i class="fa-brands fa-github profile-icon"></i>
+                            <div class="value">
+                                <div class="counter-value" data-target="50"></div>
+                                <div class="unit">+</div>
+                            </div>                         
+                        </div>
+                    </div>
+                    <div class="name">Contributions in</div>
+                    <div class="profile__name">GitHub</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="certifications" class="section certifications__section">
+            <h2 class="section__heading">Certifications</h2>
+            <div class="certifications__grid">
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-solid fa-graduation-cap header-icon"></i>
+                        <span class="header-text">Certiport</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">IT Specialist in HTML and CSS</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-brands fa-udemy header-icon"></i>
+                        <span class="header-text">Redhat Academy</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">System Administrator (RHCSA) </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-solid fa-c header-icon"></i>
+                        <span class="header-text">HackerRank</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">SQL (Basic) Certificate</a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">SQL (Intermediate) Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-solid fa-book-open header-icon"></i>
+                        <span class="header-text">NPTEL</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">Introduction to Internet Of Things</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-solid fa-c header-icon"></i>
+                        <span class="header-text">Cisco Network Academy</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name"> CLA: Programming essentials in C </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">Python Essentials </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">Operating System Basics </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">HTML Essentials </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">CSS Essentials </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">JavaScript Essentials 1 </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">JavaScript Essentials 2 </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification__box card">
+                    <div class="certification__header">
+                        <i class="fa-solid fa-c header-icon"></i>
+                        <span class="header-text">Oracle Academy</span>
+                    </div>
+                    <div class="certification__main">
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name"> Java Certified Foundations Associate </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">Java Foundations </a>
+                        </div>
+                        <div class="certification-item">
+                            <i class="fa-solid fa-award certification-icon"></i>
+                            <a href="#" target="_blank" class="certification-name">Java Programming </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section education__section">
+            <h2 class="section__heading">Education</h2>
+            <div class="education__timeline">
+                <div class="timeline__item card">
+                    <div class="timeline__content">
+                        <span class="timeline__year">2023 - 2027</span>
+                        <h3 class="timeline__title">Bachelor of Technology in Computer Science</h3>
+                        <p class="timeline__university">Aditya College of Engineering and Technology, Surampalem</p>
+                        <p class="timeline__description">Specialized in DSA Programming and Web Technologies. Maintained a GPA of 9.25/10.</p>
+                    </div>
+                </div>
+                <div class="timeline__item card">
+                    <div class="timeline__content">
+                        <span class="timeline__year">2021 - 2023</span>
+                        <h3 class="timeline__title">Intermediate (MPC)</h3>
+                        <p class="timeline__university">Ashram Junior College, Kakinada</p>
+                        <p class="timeline__description">Scored 80% in the final examinations. Actively participated in various science fairs.</p>
+                    </div>
+                </div>
+                <div class="timeline__item card">
+                    <div class="timeline__content">
+                        <span class="timeline__year">2021</span>
+                        <h3 class="timeline__title">High School</h3>
+                        <p class="timeline__university">Ashram Public School, Kakinada</p>
+                        <p class="timeline__description">Completed my high school education with a perfect score of 10 GPA.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact__section">
+            <h2 class="contact__heading">Let's Talk</h2>
+            <div class="contact__icons">
+                <div class="icon-circle" onclick="copyPhoneNumber()">
+                    <i class="fa-solid fa-phone contact-icon"></i>
+                </div>
+                <a href="mailto:srinija.pullipudi@email.com" class="icon-circle">
+                    <i class="fa-solid fa-envelope contact-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/srinija-pullipudi" target="_blank" class="icon-circle">
+                    <i class="fa-brands fa-linkedin-in contact-icon"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 Srinija Pullipudi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
