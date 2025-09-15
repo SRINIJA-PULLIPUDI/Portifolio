@@ -17,7 +17,7 @@
         </div>
         <nav class="header__nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#particles-js" class="nav__link active">Home</a></li>
+                <li class="nav__item active"><a href="#home" class="nav__link active">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                 <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
@@ -32,8 +32,8 @@
     </header>
 
     <main class="main-content">
-        <section class="section home__section">
-            <div id="particles-js" class="home__bg">
+        <section class="section home__section" id="home">
+            <div id="particles-js"  class="home__bg">
             </div>
             <div class="home__text-container">
                 <h1 class="home__text-hi">Hi! I'm</h1>
@@ -63,6 +63,7 @@
 
         <section id="skills" class="section skills__section">
             <h2 class="section__heading">Skills</h2>
+            <p class="description"> A display of skills that describe my technical proficiencies and the tools I apply </p>
             <div class="skills__grid">
                 <div class="skills__box card">
                     <div class="skills__header">
@@ -183,33 +184,100 @@
 
         <section id="projects" class="section projects__section">
             <h2 class="section__heading">Projects</h2>
+            <p class="description"> A presentation of my projects and the tech stacks I’m diving into </p>
             <div class="projects__container">
                 <div class="project__box card">
-                    <div class="project__left">
-                        <h3 class="project__title">E-commerce Website</h3>
-                        <p class="project__description">
-                            A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB. Features user authentication, product catalog, shopping cart, and a secure payment gateway.
+                    <div class="project__left" style="width:60%;">
+                        <h3 class="project__title">ProGuide</h3>
+                        <p class="project__description" style="text-align: justify;">
+                            ProGuide is an e-commerce guide that makes online shopping simple. It compares product prices across platforms so users can find the best deals easily. It is designed for elderly users, who often struggle with visiting multiple sites and comparing prices on their own.                        
                         </p>
-                        <a href="https://github.com/srinija-pullipudi/e-commerce-site" target="_blank" class="github-link">
-                            <i class="fa-brands fa-github github-icon"></i>
-                        </a>
+                        <div class="project__tech-stack">
+                            <span class="tech-tag-icon" style="color:#ffb093;text-shadow:0 1px 2px  #fda483;">HTML</span>
+                            <span class="tech-tag-icon" style="color:#7ed8fe;text-shadow:0 1px 2px #7ed5fb ;">CSS</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/SRINIJA-PULLIPUDI/ProGuide" target="_blank" class="github-link" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github github-icon"></i>
+                            </a>
+                            <a href="https://srinija-pullipudi.github.io/ProGuide/" target="_blank" class="live-site-btn">
+                                View Site <i class="fa-solid fa-rocket live-site-icon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="project__right">
-                        <img src="images/project1.jpg" alt="E-commerce Website" class="project__image">
+                    <div class="project__right" style="width:40%;">
+                        <img src="./ProGuide.png" alt="E-commerce Website" class="project__image" style="height:15rem;">
                     </div>
                 </div>
                 <div class="project__box card">
-                    <div class="project__left">
+                    <div class="project__left" style="width:60%;">
+                        <h3 class="project__title">Learnoha</h3>
+                        <p class="project__description">
+                            LearnOha is a dual-mode web platform that blends study tools with relaxation features for balanced, stress-free learning. It offers organized study aids like a bookshelf,calendar, to-do list, portifolio, bookswap and vault alongside calming elements like quotes, games, funfacts and music.
+                        </p>
+                        <div class="project__tech-stack">
+                            <span class="tech-tag-icon" style="color:#ffb093;text-shadow:0 1px 2px  #fda483;">HTML</span>
+                            <span class="tech-tag-icon" style="color:#7ed8fe;text-shadow:0 1px 2px #7ed5fb ;">CSS</span>
+                            <span class="tech-tag-icon" style="color:#ffe65a;text-shadow:0 1px 2px #feec87 ;">JavaScript</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/SRINIJA-PULLIPUDI/Leranoha_ISHIP-1" target="_blank" class="github-link" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github github-icon"></i>
+                            </a>
+                            <a href="#" target="_blank" class="live-site-btn">
+                                View Site <i class="fa-solid fa-rocket live-site-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__right" style="width:40%;">
+                        <img src="./Learnoha.png" alt="Portfolio Website" class="project__image" style="height:15rem;">
+                    </div>
+                </div>
+                <div class="project__box card">
+                    <div class="project__left" style="width:60%;">
+                        <h3 class="project__title">Car Wash Queue</h3>
+                        <p class="project__description" style="text-align: justify;">
+                            A car wash queue simulation built in C, modeling how cars line up, wait, and get serviced at washing stations. The system uses queue data structures and algorithms to ensure efficient execution and realistic flow.                        
+                        </p>
+                        <div class="project__tech-stack">
+                            <span class="tech-tag-icon" style="color:#9cabff;text-shadow:0 1px 2px  #899bff;">C</span>
+                            <span class="tech-tag-icon" style="color:rgb(156, 252, 156);text-shadow:0 1px 2px  rgb(135, 255, 135);;">DSA</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="#" target="_blank" class="github-link" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github github-icon"></i>
+                            </a>
+                            <a href="#" target="_blank" class="live-site-btn">
+                                View Site <i class="fa-solid fa-rocket live-site-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__right" style="width:40%;">
+                        <img src="./CarWashQueue.png" alt="E-commerce Website" class="project__image" style="height:16rem;">
+                    </div>
+                </div>
+                <div class="project__box card">
+                    <div class="project__left" style="width:60%;">
                         <h3 class="project__title">Portfolio Website</h3>
                         <p class="project__description">
                             The very portfolio you are viewing! This was built using HTML, CSS, and JavaScript. It showcases my skills and projects in a responsive and engaging way with animations.
                         </p>
-                        <a href="https://github.com/srinija-pullipudi/portfolio-website" target="_blank" class="github-link">
-                            <i class="fa-brands fa-github github-icon"></i>
-                        </a>
+                        <div class="project__tech-stack">
+                            <span class="tech-tag-icon" style="color:#ffb093;text-shadow:0 1px 2px  #fda483;">HTML</span>
+                            <span class="tech-tag-icon" style="color:#7ed8fe;text-shadow:0 1px 2px #7ed5fb ;">CSS</span>
+                            <span class="tech-tag-icon" style="color:#ffe65a;text-shadow:0 1px 2px #feec87 ;">JavaScript</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://github.com/SRINIJA-PULLIPUDI/Portifolio" target="_blank" class="github-link" aria-label="GitHub Repository">
+                                <i class="fa-brands fa-github github-icon"></i>
+                            </a>
+                            <a href="https://srinija-pullipudi.github.io/Portifolio/" target="_blank" class="live-site-btn">
+                                View Site <i class="fa-solid fa-rocket live-site-icon"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="project__right">
-                        <img src="images/project2.jpg" alt="Portfolio Website" class="project__image">
+                    <div class="project__right" style="width:40%;">
+                        <img src="./Portifolio.png" alt="Portfolio Website" class="project__image" style="height:15rem;">
                     </div>
                 </div>
             </div>
@@ -217,11 +285,12 @@
 
         <section id="coding-profiles" class="section coding-profiles__section">
             <h2 class="section__heading">Coding Profiles</h2>
+            <p class="description"> Here are the footprints of my activities and competitive coding achievements. </p>
             <div class="profiles__grid">
                 <a href="https://leetcode.com/srinija_p12" target="_blank" class="profile__box leetcode cardleetcode">
                     <div class="profile__top">
                         <div class="profile__counter">
-                            <i class="fa-solid fa-laptop-code profile-icon"></i>
+                            <img class="profile-icon" src="./leetcodelogo.png" style="width: 6.5rem;height:6rem;"></img>
                             <div class="value">
                                 <div class="counter-value" data-target="250"></div>
                                 <div class="unit">+</div>
@@ -234,7 +303,7 @@
                 <a href="https://www.codechef.com/users/srinija_p12" target="_blank" class="profile__box codechef cardcodechef">
                     <div class="profile__top">
                         <div class="profile__counter">
-                            <i class="fa-solid fa-code profile-icon"></i>
+                            <img class="profile-icon" src="./codecheflogo.png" style="width: 11rem;height:6rem;"></img>
                             <div class="value">
                                 <div class="counter-value" data-target="220"></div>
                                 <div class="unit">+</div>
@@ -247,7 +316,7 @@
                 <a href="https://www.hackerrank.com/23MH1A05O3" target="_blank" class="profile__box hackerrank cardhackerrank">
                     <div class="profile__top">
                         <div class="profile__counter">
-                            <i class="fa-brands fa-hackerrank profile-icon"></i>
+                            <img class="profile-icon" src="./hackerranklogo.png" style="width: 6.5rem;height:6rem;"></img>
                             <div class="value">
                                 <div class="counter-value" data-target="10"></div>
                                 <div class="unit">+</div>
@@ -260,7 +329,7 @@
                 <a href="https://www.geeksforgeeks.org/user/srilupuln415" target="_blank" class="profile__box gfg cardgfg">
                     <div class="profile__top">
                         <div class="profile__counter">
-                            <i class="fa-solid fa-laptop-code profile-icon"></i>
+                            <img class="profile-icon" src="./gfglogo.png" style="width: 5.5rem;height:3.5rem;margin:1.35rem 0 1.7rem 0;"></img>
                             <div class="value">
                                 <div class="counter-value" data-target="110"></div>
                                 <div class="unit">+</div>
@@ -273,7 +342,7 @@
                 <a href="https://github.com/srinija-pullipudi" target="_blank" class="profile__box github cardgit">
                     <div class="profile__top">
                         <div class="profile__counter">
-                            <i class="fa-brands fa-github profile-icon"></i>
+                            <img class="profile-icon" src="./githublogo.png" style="width: 6.5rem;height:6rem;" ></img>
                             <div class="value">
                                 <div class="counter-value" data-target="50"></div>
                                 <div class="unit">+</div>
@@ -288,10 +357,11 @@
 
         <section id="certifications" class="section certifications__section">
             <h2 class="section__heading">Certifications</h2>
+            <p class="description"> A glimpse into the domains where I'm certified and the knowledge I’ve gained  </p>
             <div class="certifications__grid">
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-solid fa-graduation-cap header-icon"></i>
+                        <img class="header-icon" src="./certiportlogo.png" style="border-radius:5px;"></img>
                         <span class="header-text">Certiport</span>
                     </div>
                     <div class="certification__main">
@@ -303,7 +373,7 @@
                 </div>
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-brands fa-udemy header-icon"></i>
+                        <img class="header-icon" src="./redhatlogo.png" style="width:4rem;height:3rem;"></img>
                         <span class="header-text">Redhat Academy</span>
                     </div>
                     <div class="certification__main">
@@ -315,7 +385,7 @@
                 </div>
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-solid fa-c header-icon"></i>
+                        <img class="header-icon" src="./hackerranklogo1.png" style="border-radius: 6px;"></img>
                         <span class="header-text">HackerRank</span>
                     </div>
                     <div class="certification__main">
@@ -331,7 +401,7 @@
                 </div>
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-solid fa-book-open header-icon"></i>
+                        <img class="header-icon" src="./nptellogo.png" style="height:3.9rem; width:4.1rem;"></img>
                         <span class="header-text">NPTEL</span>
                     </div>
                     <div class="certification__main">
@@ -343,7 +413,7 @@
                 </div>
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-solid fa-c header-icon"></i>
+                        <img class="header-icon" src="./ciscologo.png" style="width:4rem; height:3rem;"></img>
                         <span class="header-text">Cisco Network Academy</span>
                     </div>
                     <div class="certification__main">
@@ -379,7 +449,7 @@
                 </div>
                 <div class="certification__box card">
                     <div class="certification__header">
-                        <i class="fa-solid fa-c header-icon"></i>
+                        <img class="header-icon" src="./oraclelogo1.png" style="border-radius:6px"></img>
                         <span class="header-text">Oracle Academy</span>
                     </div>
                     <div class="certification__main">
@@ -402,6 +472,7 @@
 
         <section id="education" class="section education__section">
             <h2 class="section__heading">Education</h2>
+            <p class="description"> A flash recap into my journey </p>
             <div class="education__timeline">
                 <div class="timeline__item card">
                     <div class="timeline__content">
@@ -432,14 +503,15 @@
 
         <section id="contact" class="section contact__section">
             <h2 class="contact__heading">Let's Talk</h2>
+            <p class="description">I welcome new opportunities and collaborations,<br> you can contact me through email or connect on social media channels.</p>
             <div class="contact__icons">
                 <div class="icon-circle" onclick="copyPhoneNumber()">
                     <i class="fa-solid fa-phone contact-icon"></i>
                 </div>
-                <a href="mailto:srinija.pullipudi@email.com" class="icon-circle">
+                <a href="mailto:srilupullipudi@email.com" class="icon-circle">
                     <i class="fa-solid fa-envelope contact-icon"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/srinija-pullipudi" target="_blank" class="icon-circle">
+                <a href="https://www.linkedin.com/in/srinija-pullipudi-8a2510291/" target="_blank" class="icon-circle">
                     <i class="fa-brands fa-linkedin-in contact-icon"></i>
                 </a>
             </div>
