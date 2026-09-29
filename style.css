@@ -426,6 +426,7 @@ a {
     display: flex;
     gap: 2rem;
     margin-top:25px;
+    flex-wrap: wrap;
 }
 
 .certification-item {
@@ -459,7 +460,16 @@ a {
 .skill-icon{
     font-size: 2.35rem;
     width: 3rem;
+    height: 3rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-logo {
+    object-fit: contain;
+    flex: 0 0 3rem;
 }
 
 .skill-name {

@@ -1,35 +1,27 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Unified scroll and header active state logic
     const sections = document.querySelectorAll('.section');
     const navLinks = document.querySelectorAll('.nav__link');
+    const header = document.querySelector('.header');
 
-    const setActiveLink = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove 'active' from all links
-                navLinks.forEach(link => link.classList.remove('active'));
+    const updateActiveLink = () => {
+        const activationPoint = header.getBoundingClientRect().bottom + 1;
+        let currentSection = sections[0];
 
-                // Add 'active' to the link corresponding to the current section
-                const currentSectionId = entry.target.getAttribute('id');
-                const matchingLink = document.querySelector(`.nav__link[href="#${currentSectionId}"]`);
-                if (matchingLink) {
-                    matchingLink.classList.add('active');
-                }
+        sections.forEach(section => {
+            if (section.getBoundingClientRect().top <= activationPoint) {
+                currentSection = section;
             }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${currentSection.id}`);
         });
     };
 
-    const observer = new IntersectionObserver(setActiveLink, {
-        root: null,
-        rootMargin: '0px 0px -50% 0px',
-        threshold: 0 // Adjust this value as needed
-    });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+    window.addEventListener('resize', updateActiveLink);
+    updateActiveLink();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
