@@ -271,6 +271,12 @@ a {
     animation: gradient-animate 3s infinite;
 }
 
+.one_liners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes gradient-animate {
     0%,
     100% {
@@ -324,44 +330,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
     width: 100%;
-    max-width: 1200px;
-}
-
-.about__left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.about__image {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 5%;
-    border: 5px solid var(--color-accent);
-    box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
-    transition: transform 0.5s ease-in-out;
-}
-
-.Pic{
-    opacity:0;
-    transform:translateX(-100px);
-    transition:all 1s;
-}
-
-.show1{
-    opacity:1;
-    transform:translateX(0px);
-}
-
-.about__image:hover {
-    transform: scale(1.05);
+    max-width: 900px;
 }
 
 .about__right {
-    flex: 2;
+    width: 100%;
     text-align: left;
 }
 
@@ -672,6 +646,28 @@ a {
     height: 350px;
 }
 
+.Card1{
+    opacity:0;
+    transform:translateX(-500px);
+    transition:all 1s;
+}
+
+.Show1{
+    opacity:1;
+    transform: translateX(0);
+}
+
+.Card2{
+    opacity:0;
+    transform:translateX(500px);
+    transition:all 1s;
+}
+
+.Show2{
+    opacity:1;
+    transform: translateX(0);
+}
+
 .project__box:nth-child(even) {
     flex-direction: row-reverse;
 }
@@ -806,21 +802,21 @@ a {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: var(--color-border-card);
+    background-color: rgb(133, 132, 132);
 }
 
 .timeline__item {
     padding: 1rem 2rem;
     position: relative;
     background-color: var(--color-background-card);
-    border: 1px solid var(--color-border-card);
+    border: 1px solid rgb(116, 115, 115);
     border-radius: 10px;
     margin-bottom: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
 
-.timeline__item::before {
+/* .timeline__item::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -831,7 +827,7 @@ a {
     border-radius: 50%;
     background-color: var(--color-accent);
     border: 2px solid var(--color-dark-theme);
-}
+} */
 
 .timeline__year {
     display: block;
@@ -843,7 +839,7 @@ a {
 
 .timeline__title {
     font-size: 1.2rem;
-    color: var(--color-accent);
+    color: #d9befb;
 }
 
 .timeline__university {
@@ -957,10 +953,6 @@ a {
         text-align: center;
     }
 
-    .about__left {
-        margin-bottom: 2rem;
-    }
-
     .about__right {
         text-align: center;
     }
@@ -990,11 +982,6 @@ a {
 
     .home__text-name {
         font-size: 3rem;
-    }
-
-    .about__image {
-        width: 250px;
-        height: 250px;
     }
 
     .skills__grid, .certifications__grid, .profiles__grid {

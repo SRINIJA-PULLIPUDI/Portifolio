@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver(setActiveLink, {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.5 // Adjust this value as needed
+        rootMargin: '0px 0px -50% 0px',
+        threshold: 0 // Adjust this value as needed
     });
 
     sections.forEach(section => {
@@ -104,20 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.main-cont').forEach(ele => {
         observer1.observe(ele);
-    });
-
-    const observer2 = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-            entry.target.classList.add('show1');
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
-
-    document.querySelectorAll('.Pic').forEach(ele => {
-        observer2.observe(ele);
     });
 
     const observer3 = new IntersectionObserver((entries) => {
@@ -204,7 +190,33 @@ document.addEventListener('DOMContentLoaded', () => {
         observer8.observe(ele);
     });
 
-    
+    const observer9 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('Show1');
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    document.querySelectorAll('.Card1').forEach(ele => {
+        observer9.observe(ele);
+    });
+
+    const observer10 = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            entry.target.classList.add('Show2');
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    document.querySelectorAll('.Card2').forEach(ele => {
+        observer10.observe(ele);
+    });
 
     const profileBoxes = document.querySelectorAll('.profile__box');
     profileBoxes.forEach(box => {
@@ -228,15 +240,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Function to copy phone number to clipboard
-    window.copyPhoneNumber = function() {
-        const phoneNumber = '8555908147'; // Replace with your actual phone number
-        navigator.clipboard.writeText(phoneNumber).then(() => {
-            alert('Phone number copied to clipboard!');
-        }).catch(err => {
-            console.error('Could not copy text: ', err);
-        });
-    }
+    // window.copyPhoneNumber = function() {
+    //     const phoneNumber = '8555908147'; // Replace with your actual phone number
+    //     navigator.clipboard.writeText(phoneNumber).then(() => {
+    //         alert('Phone number copied to clipboard!');
+    //     }).catch(err => {
+    //         console.error('Could not copy text: ', err);
+    //     });
+    // }
 
+const phoneLink = document.getElementById('phone-link');
+if (phoneLink) {
+    phoneLink.addEventListener('click', (event) => {
+        event.preventDefault(); // This is crucial for stopping navigation
+
+        const phoneNumber = '8555908147';
+        navigator.clipboard.writeText(phoneNumber)
+            .then(() => {
+                alert('Phone number copied to clipboard!');
+            })
+            .catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+    });
+}
     // Helper to refresh counters on page load
     window.onload = function() {
         const counterElements = document.querySelectorAll('.counter-value');
